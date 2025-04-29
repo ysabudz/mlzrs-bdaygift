@@ -121,6 +121,8 @@
             overflow: hidden;
             margin-left: 20px;
             background-color: aliceblue;
+            border-radius: 30px;
+            box-shadow: 0 0 30px rgba(0, 123, 255, 0.7);
         }
 
         .slide {
@@ -165,7 +167,7 @@
             font-size: 15px;
             padding: 8px 12px;
             position: absolute;
-            bottom: 8px;
+            bottom: 30px;
             width: 100%;
             text-align: center;
             background-color: rgba(0,0,0,0.5);
@@ -179,6 +181,26 @@
         @keyframes fade {
             from {opacity: .4}
             to {opacity: 1}
+        }
+
+        /*LETTER*/
+
+        .letter-container {
+        	background-color: lightblue;
+        	color: midnightblue;
+        	font-size: 20px;
+        	font-family: Monsterrat, sans-serif;
+        	border-radius: 10px;
+        	border: 2px midnightblue;
+        	box-shadow: 10px skyblue;
+        	width: 50%;
+        	height: 100%;
+        	text-align: center;
+        	box-shadow: 0 0 30px rgba(0, 123, 255, 0.7);
+        }
+
+        .container {
+        	justify-content: space-evenly;
         }
 
 	</style>
@@ -204,63 +226,69 @@
         </nav>
         <br>
         <br>
+
+    <div class="container">
     <div class="slideshow-container">
         <div class="slide fade">
             <img src="image1.jpg" alt="Image 1">
-            <div class="text">Caption One</div>
+            <div class="text">my favorite picture of you ^_^</div>
         </div>
 
         <div class="slide fade">
             <img src="image2.jpg" alt="Image 2">
-            <div class="text">Caption Two</div>
+            <div class="text">my favorite picture of us!</div>
         </div>
 
         <div class="slide fade">
             <img src="image3.jpg" alt="Image 3">
-            <div class="text">Caption Three</div>
+            <div class="text">moonleaf partners :) #taramoonleaf</div>
         </div>
         <div class="slide fade">
             <img src="image4.jpg" alt="Image 4">
-            <div class="text">Caption One</div>
+            <div class="text">a pic w/ the best track n fielder (you)!!</div>
         </div>
 
         <div class="slide fade">
             <img src="image5.jpg" alt="Image 5">
-            <div class="text">Caption Two</div>
+            <div class="text">stressed cuz of stem talk check XD</div>
         </div>
 
         <div class="slide fade">
             <img src="image6.jpg" alt="Image 6">
-            <div class="text">Caption Three</div>
+            <div class="text">my favorite stolen pic i got of u :)</div>
         </div>
         <div class="slide fade">
             <img src="image7.jpg" alt="Image 7">
-            <div class="text">Caption One</div>
+            <div class="text">another favorite stolen pic (the sass i love)</div>
         </div>
 
         <div class="slide fade">
             <img src="image8.jpg" alt="Image 8">
-            <div class="text">Caption Two</div>
+            <div class="text">another stolen pic of my co-parent of lea</div>
         </div>
 
         <div class="slide fade">
             <img src="image9.jpg" alt="Image 9">
-            <div class="text">Caption Three</div>
+            <div class="text">one of the most zesty ahh pics of us</div>
         </div>
         <div class="slide fade">
             <img src="image10.jpg" alt="Image 10">
-            <div class="text">Caption One</div>
+            <div class="text">frog dissection core! genbio >>> genchem </div>
         </div>
 
         <div class="slide fade">
             <img src="image11.jpg" alt="Image 11">
-            <div class="text">Caption Two</div>
+            <div class="text">this is my pov everyday (and i will definitely miss this)</div>
         </div>
-
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
+
+	<div class="letter-container">
+		<p>Happiest 19th Birthday to You!!!</p><br>
+		<p> 
+	</div>
 
     <script>
         let slideIndex = 1;
@@ -286,8 +314,9 @@
 
             slides[slideIndex-1].style.display = "block";
         }
-    </script>
 
+    </script>
+	</div>
 	</body>
 	</html>
 
