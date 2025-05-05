@@ -13,7 +13,7 @@
 	    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Alex+Brush&display=swap" rel="stylesheet">
 
 	    <title>Marie's 19th Birthday Gift!</title>
-	<style>
+		<style>
 
 	h1 {
 	    font-family: "Great Vibes", cursive;
@@ -39,11 +39,12 @@
 	.header-section{
 		background-color: aliceblue;
 		font-family: "Great Vibes", cursive;
-	    font-size: 80px;
+	    font-size: 0px;
 	    text-shadow: 0 0 10px lightskyblue;
 	    width: 100%;
 	    text-align: center;
 	}
+
 
 	/*NAVBAR*/
 
@@ -58,6 +59,7 @@
 
 	li {
 	    float: left;
+	    display: inline;
 	}
 
 	li a {
@@ -65,7 +67,7 @@
 	    color: white;
 	    font-family: ;
 	    text-align: center;
-	    padding: 8px 100px;
+	    padding: 8px 94.5px;
 	    text-decoration: none;
 	    height: 20px;
 	    font-family: Montserrat, sans-serif;
@@ -76,15 +78,7 @@
 	    background-color: whitesmoke;
 	    color: deepskyblue;
 	}
-	ul {
-	    list-style-type: none;
-	    margin: 0;
-	    padding: 0;
-	}
-	li {
-	    display: inline;
-	}
-	
+
 	.active {
 	    background-color: whitesmoke;
 	    color: deepskyblue;
@@ -92,11 +86,11 @@
 
 	.container {
 	    display: flex;
-	    justify-content: center; /* Centers horizontally */
-	    align-items: center; /* Centers vertically */
+	    justify-content: center; 
+	    align-items: center; 
 	    padding: 20px;
-	    flex-wrap: wrap; /* Prevents stretching */
-	    width: 100%; /* Ensures full width */
+	    flex-wrap: wrap; 
+	    width: 100%;
 	    padding-top: 0;
 	    margin-top: 0;
 	}
@@ -113,34 +107,92 @@
 	    z-index: 1000;
 	}
 
-	button {
-		margin: 3px;
-		margin-top: -1px;
-		padding: 10px;
+	/* playlist pictures */
+
+	/* playlist pictures */
+
+	.playlist-container {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  width: 80%;
+	  margin: 20px auto;
 	}
+
+	.playlist-link { /* Style for the hyperlink (optional) */
+	  display: block; /* Make the entire container clickable */
+	}
+
+	.playlist-cover {
+	  width: 250px;
+	  height: 250px;
+	  box-shadow: 0 0 30px rgba(0, 123, 255, 0.7);
+	  border-radius: 20px;
+	  overflow: hidden;
+	  transition: transform 0.3s ease-in-out; /* Add a smooth transition for the enlargement */
+	}
+
+	.playlist-cover:hover {
+	  transform: scale(1.1); /* Scale up the container on hover */
+	  box-shadow: 0 0 40px rgba(0, 123, 255, 0.9); /* Slightly enhance the shadow on hover */
+	}
+
+	.playlist-cover img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	  transition: opacity 0.3s ease-in-out; /* Optional: Add transition for image opacity */
+	}
+
+	.playlist-cover:hover img {
+	  opacity: 0.8; /* Optional: Slightly fade the image on hover */
+	}
+
+
 	</style>
 	</head>
 
 	<body>
 
 	<div class="header-section">
-		<p style="margin-top: 40px;"> Marie's 19th! </p>
+		<br>
+		<p style="margin-top: 40px; font-size: 80px;"> Marie's 19th! </p>
 	</div>
 
-	<nav class="navbar navbar-expand-lg navbar-custom" style="margin-top: -80px;">
+	<nav class="navbar navbar-expand-lg navbar-custom" style="margin-top: -90px;">
             <div>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto">
                     <b> <li class="nav-item"><a class="nav-link" href="homepage.html">Home Page</a></li> </b>
                     <b> <li class="nav-item"><a class="nav-link" href="message.html">You've Got A Message!</a></li> </b>
-                    <b> <li class="nav-item"><a class="active" href="playlist.html">Tailored Tunes</a></li> </b>
+                    <b> <li class="nav-item"><a class="active" href="playlist.html"> Reminds Me of You~</a></li> </b>
                     <b> <li class="nav-item"><a class="nav-link" href="login.html">Log Out</a></li> </b>
                 	</ul>
                 </div>
             </div>
         </nav>
+    <br>
+    <br>
 
+	<div class="playlist-container">
+	  <a href="https://open.spotify.com/playlist/7eY3LH9tD9OfXovGthaXHO?si=_hK1MG5NQFOfKqGmvzbCyg&pi=0HIU9kBXTLWI6" class="playlist-link">
+	    <div class="playlist-cover">
+	      <img src="playlist-1.jpg" alt="Image 1">
+	    </div>
+	  </a>
 
+	  <a href="https://open.spotify.com/playlist/4SpdYJ3ma09K2p2eMqeeJ0?si=O514fvP3Te-kmfTvaxvWRA&pi=dOHVM0jGTBK8c" class="playlist-link">
+	    <div class="playlist-cover">
+	      <img src="playlist-2.jpg" alt="Image 2">
+	    </div>
+	  </a>
+
+	  <a href="https://open.spotify.com/playlist/0hIodp7d59Ee1A4ZoxMIeR?si=U2h0euX8SM262Cyw5ogW_g&pi=4VIkBJjQTFCBQ" class="playlist-link">
+	    <div class="playlist-cover">
+	      <img src="playlist-3.jpg" alt="Image 3">
+	    </div>
+	  </a>
+	</div>
 
 	</body>
 	</html>
