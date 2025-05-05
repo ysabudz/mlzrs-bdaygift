@@ -39,10 +39,10 @@
 	.header-section{
 		background-color: aliceblue;
 		font-family: "Great Vibes", cursive;
-	    font-size: 80px;
+	    font-size: 0px;
 	    text-shadow: 0 0 10px lightskyblue;
 	    width: 100%;
-	    text-align: center;
+	    text-align: center;	
 	}
 
 	/*NAVBAR*/
@@ -65,7 +65,7 @@
 	    color: white;
 	    font-family: ;
 	    text-align: center;
-	    padding: 8px 100px;
+	    padding: 8px 94.5px;
 	    text-decoration: none;
 	    height: 20px;
 	    font-family: Montserrat, sans-serif;
@@ -112,29 +112,69 @@
 	    position: relative;
 	    z-index: 1000;
 	}
+
+	.short-message {
+		font-family: Montserrat, sans-serif;
+		text-align: justify;
+		padding: 30px;
+		background-color: aliceblue;
+		color: darkblue;
+		width: 50%;
+		height: 40%;
+		border: 5px;	
+		border-style: solid;	
+		border-radius: 20px;
+		border-color: darkblue;
+        box-shadow: 0 0 100px rgba(0, 123, 255, 0.7);
+        margin-left: auto;
+        margin-right: auto;
+
+	    transform: translateY(50px); /* Start a bit below its final position */
+	    opacity: 0;
+	    animation: slideInBottom 0.8s ease-out forwards;
+	}
+
+		@keyframes slideInBottom {
+		  from {
+		    transform: translateY(50px);
+		    opacity: 0;
+		  }	
+		  to {
+			    transform: translateY(0);
+		    opacity: 1;
+		  }
+		}
+
 	</style>
 	</head>
 
 	<body>
 
 	<div class="header-section">
-		<p style="margin-top: 40px;"> Marie's 19th! </p>
+		<br>
+		<p style="margin-top: 40px; font-size: 80px;"> Marie's 19th! </p>
 	</div>
 
-	<nav class="navbar navbar-expand-lg navbar-custom" style="margin-top: -80px;">
+	<nav class="navbar navbar-expand-lg navbar-custom" style="margin-top: -80px	;">
             <div>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto">
                     <b> <li class="nav-item"><a class="active" href="homepage.html">Home Page</a></li> </b>
                     <b> <li class="nav-item"><a class="nav-link" href="message.html">You've Got A Message!</a></li> </b>
-                    <b> <li class="nav-item"><a class="nav-link" href="playlist.html">Tailored Tunes</a></li> </b>
+                    <b> <li class="nav-item"><a class="nav-link" href="playlist.html">Reminds Me of You~</a></li> </b>
                     <b> <li class="nav-item"><a class="nav-link" href="login.html">Log Out</a></li> </b>
                 	</ul>
                 </div>
             </div>
         </nav>
 
+        <br>
+        <br>
+        <br>
 
+        <div class="short-message">
+            <p> Hey, Marie :) <br><br> Happy happy birthday to you! I can't believe you're 19 already... <br><br> Disclaimer: The website is not perfect but I did my best to execute what I had on mind. This is also supposed to be for your eyes only; thus, the login page. <br><br> However, feel free to share the link to others! You have my consent :> <br><br> Loving you always (no matter how goofy you are), <br> Ysa <3 </p>	
+        </div>
 
 	</body>
 	</html>
