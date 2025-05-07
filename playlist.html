@@ -6,7 +6,7 @@
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	    <link rel="stylesheet" href="homepage.css">
+	    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	    <link rel="preconnect" href="https://fonts.googleapis.com">
 	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,19 +55,23 @@
 	    left: 0;
 	    overflow: hidden; /* box for the navigation bar*/
 	    background-color: deepskyblue;
+	    font-family: Montserrat, sans-serif;
 	}
 
 	li {
 	    float: left;
 	    display: inline;
+	    font-family: Montserrat, sans-serif;
 	}
 
 	li a {
 	    display: block;
 	    color: white;
-	    font-family: ;
+	    font-family: ;	
 	    text-align: center;
-	    padding: 8px 94.5px;
+	   padding: 8px;
+	   width: 300px	;
+	   max-width: 1000px;
 	    text-decoration: none;
 	    height: 20px;
 	    font-family: Montserrat, sans-serif;
@@ -77,11 +81,13 @@
 	li a:hover {
 	    background-color: whitesmoke;
 	    color: deepskyblue;
+	    font-family: Montserrat, sans-serif;
 	}
 
 	.active {
 	    background-color: whitesmoke;
 	    color: deepskyblue;
+	    font-family: Montserrat, sans-serif;
 	}
 
 	.container {
@@ -93,6 +99,7 @@
 	    width: 100%;
 	    padding-top: 0;
 	    margin-top: 0;
+	    font-family: Montserrat, sans-serif;
 	}
 	.navbar-custom {
 	    height: 35px;
@@ -105,9 +112,8 @@
 	    padding: 0;
 	    position: relative;
 	    z-index: 1000;
+	    font-family: Montserrat, sans-serif;
 	}
-
-	/* playlist pictures */
 
 	/* playlist pictures */
 
@@ -117,35 +123,41 @@
 	  align-items: center;
 	  width: 80%;
 	  margin: 20px auto;
+	    font-family: Montserrat, sans-serif;
 	}
 
-	.playlist-link { /* Style for the hyperlink (optional) */
-	  display: block; /* Make the entire container clickable */
+	.playlist-link { 
+	  display: block; 
+	    font-family: Montserrat, sans-serif;
 	}
 
 	.playlist-cover {
-	  width: 250px;
-	  height: 250px;
+	  width: auto;
+	  height: auto;
 	  box-shadow: 0 0 30px rgba(0, 123, 255, 0.7);
 	  border-radius: 20px;
 	  overflow: hidden;
 	  transition: transform 0.3s ease-in-out; /* Add a smooth transition for the enlargement */
+	   margin: 30px;
+	   position: relative;
+	    font-family: Montserrat, sans-serif;
 	}
 
 	.playlist-cover:hover {
-	  transform: scale(1.1); /* Scale up the container on hover */
-	  box-shadow: 0 0 40px rgba(0, 123, 255, 0.9); /* Slightly enhance the shadow on hover */
-	}
+	  transform: scale(1.1); 
+	  box-shadow: 0 0 40px rgba(0, 123, 255, 0.9); 
+	}	
 
 	.playlist-cover img {
 	  width: 100%;
 	  height: 100%;
 	  object-fit: cover;
-	  transition: opacity 0.3s ease-in-out; /* Optional: Add transition for image opacity */
+	  transition: opacity 0.3s ease-in-out; 
+
 	}
 
 	.playlist-cover:hover img {
-	  opacity: 0.8; /* Optional: Slightly fade the image on hover */
+	  opacity: 0.8;
 	}
 
 
