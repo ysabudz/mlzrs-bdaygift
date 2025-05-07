@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Alex+Brush&display=swap" rel="stylesheet">
 
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <title>Marie's 19th Birthday Gift!</title>
 
 <style>
@@ -250,6 +252,11 @@ function redirectToPage(event) {
     if (user === "marielizares" && password === "05062006") {
         window.location.href = "homepage.html";
     }
+
+    if else (user === "marysa" && password === "secret001") {
+        window.location.href = "secret.html";
+    }
+
     else {
         console.log("Login failed, displaying modal");
         errorModal.style.display = "block";
